@@ -1,0 +1,37 @@
+
+.menucont {
+    display: grid;
+    background-color: rgb(222, 184, 135);
+    grid-template-columns:  150px  150px;
+    grid-template-rows:  150px 150px;
+    text-align: center;
+}
+.recp1{
+    background-color: #aa7a53da;
+   
+}
+.recp2{
+    background-color: #88db6e;
+    
+}
+.recp3{
+    background-color: #e9e654;
+    grid-column-start:    
+}
+.recp4{
+    background-color: #e95454;
+}
+/* .recp5{
+    background-color: #f55b47;
+}
+.recp6{
+    background-color: #56cce9;
+}
+.recp7{
+    background-color: #fca9be;
+}
+.subitem{
+    background-color: #d6165d;
+    grid-column-start: 4;
+    grid-column-end: 8; */
+    

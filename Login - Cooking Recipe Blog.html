@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+    <link rel="stylesheet" type="text/css" href="Login-Cooking Recipe Blog.css">
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="Video/EPIC HANDHELD B ROLL - Cinematic Cooking Promo Video (Lumix G7 + 42.5mm 1.7 Lens).mp4" type="video/mp4"> 
+    </div >
+    <form id="loginForm" action="http://127.0.0.1:5500/Cooking%20Recipe%20Blog.html" method="post">
+        <div class="loginbrand">
+            <img src="Logo transparent/1.png" width="200" alt="loginbrand logo">
+        </div>
+      
+        <h3>Login Here</h3>
+
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Email or Phone" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password" id="password" required>
+
+        <button loginButton" type="submit" disabled">Login</button>
+
+     <!-- <button><a href="Cooking Recipe Blog.html">Log In</a></button> -->
+
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+</body>
+<script>
+    const loginForm = document.getElementById("loginForm");
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
+    const loginButton = document.getElementById("loginButton");
+
+    // Add an event listener to the form
+    loginForm.addEventListener("input", function() {
+        // Check if both username and password fields have values
+        if (usernameInput.value.trim() !== "" && passwordInput.value.trim() !== "") {
+            loginButton.removeAttribute("disabled");
+        } else {
+            loginButton.setAttribute("disabled", "true");
+        }
+    });
+</script>
+
+</html>
